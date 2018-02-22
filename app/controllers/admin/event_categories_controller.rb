@@ -3,6 +3,7 @@ class Admin::EventCategoriesController < Admin::BaseController
   
   # GET /admin/event_categories
   def index
+    #@の後ろがURLになる。このURLのとき = EvrntCategory を 全て持ってくきて、index.html.erbファイルを表示
     @event_categories = EventCategory.all
   end
   
